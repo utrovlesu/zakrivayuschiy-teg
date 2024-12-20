@@ -18,6 +18,7 @@
   background-attachment: scroll;
   background-image: var(--background-main);
   background-size: cover;
+  padding-block-start: 102px;
 }
 
 .wrapper {
