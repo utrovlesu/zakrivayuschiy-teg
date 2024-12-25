@@ -2,8 +2,11 @@
 :root {
 	--font-main: 'Inter';
 	--font-accent: 'PressStart2P';
-	--font-weight-card-body: 'wght' 400;
-	--font-weight-card-title: 'wght' 700;
+	--font-weight-card-body: 400;
+	--font-weight-card-title: 700;
+	--font-size-main: 18px;
+	--color-accent:#000;
+	--color-main:#fff;
 	--background-main:
 	repeating-linear-gradient(
 		90deg, 
@@ -21,4 +24,7 @@
 		 #e7e7e7 0.01%,
 		 #1a1a1a);
 	--content-width: clamp(23.1875rem, 16.0352rem + 30.5164vw, 43.5rem); /* 375-1440 */
+	--color-stroke: #ffffff;
+	--color-contour: #000000;
+	--color-sparks: #ff0000;
 }
