@@ -80,6 +80,34 @@
   display: block;
 }
 
+.yoga {
+	filter: saturate(200%);
+}
+
+.forest {
+	filter: invert(30%);
+}
+
+.pink-wall {
+	filter: contrast(200%);
+}
+
+.build {
+	filter: grayscale(100%);
+}
+
+.lions {
+	filter: contrast(200%) saturate(200%) brightness(90%);
+}
+
+.kubik {
+	filter: hue-rotate(0.74turn);
+}
+
+.kamin {
+	filter: sepia(0.5);
+}
+
 .watermark {
   position: absolute;
   top: 25px;
