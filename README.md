@@ -1,2 +1,2 @@
 # Закрывающий тег
-[Ссылка на репозиторий](https://github.com/utrovlesu/zakrivayuschiy-teg.git)
+[Ссылка на репозиторий](https://github.com/utrovlesu/zakrivayuschiy-teg-f)
