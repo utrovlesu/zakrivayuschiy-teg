@@ -83,11 +83,6 @@
   transition: box-shadow 0.3s ease;
 }
 
-.card__icon-button:focus-visible {
-  border: 2px solid var(--color-accent);
-  transition: border 0.3s ease;
-}
-
 .button::before {
   content: "";
   position: absolute;
