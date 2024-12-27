@@ -9,3 +9,137 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
+.card__icon-button:focus-visible {
+	border: 2px solid var(--color-accent);
+	transition: border 0.3s ease;
+ }
+
+ .card__icon-button:focus {
+	outline: none;
+ }
+
+ .core {
+	transition: fill 0.3s ease;
+	transition-delay: 0.03s;
+ }
+
+ .card__icon-button:hover .core {
+	fill: var(--color-contour);
+	transition: fill 0.3s ease;
+ }
+
+ .card__icon-button:hover .main-body {
+	fill: var(--color-contour);
+	transition: fill 0.3s ease;
+	transition-delay: 0.05s;
+ }
+
+ .card__icon-button:active .core {
+	fill: var(--color-sparks);
+	transition: fill 0.3s ease;
+ }
+
+ .card__icon-button:active .main-body {
+	fill: var(--color-sparks);
+	transition: fill 0.3s ease;
+	transition-delay: 0.05s;
+ }
+
+ .like-icon.is-liked .core {
+	fill: var(--color-sparks);
+	transition: fill 0.3s ease;
+ }
+
+ .like-icon.is-liked .main-body {
+	fill: var(--color-sparks);
+	transition: fill 0.3s ease;
+	transition-delay: 0.05s;
+ }
+
+ .like-icon.is-liked .contour {
+	fill: var(--color-sparks);
+	transition: fill 0.3s ease;
+	transition-delay: 0.06s;
+ }
+
+ .contour {
+	fill: var(--color-contour);
+	transition: fill 0.1s linear;
+ }
+
+ .like-icon.is-liked .heart {
+	animation: scale-heart 0.3s ease-in;
+	animation-delay: 0.1s;
+	transform-origin: center;
+ }
+
+ .like-icon.is-liked .sparks {
+	animation: sparks-heart 0.3s ease-in;
+	animation-delay: 0.3s;
+ }
+
+.button:focus-visible {
+  box-shadow: 2px 2px 0px 0px var(--color-accent);
+  transition: box-shadow 0.3s ease;
+}
+
+.card__icon-button:focus-visible {
+  border: 2px solid var(--color-accent);
+  transition: border 0.3s ease;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  inline-size: 100%;
+  block-size: 100%;
+  background-color: var(--color-accent);
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+  z-index: 1;
+  transform-origin: left;
+}
+
+.button:hover::before {
+  transform: scale(1);
+}
+
+@keyframes scale-heart {
+	0% {
+	  transform: scale(1);
+	}
+
+	100% {
+	  transform: scale(1.5);
+	}
+
+	0% {
+	  transform: scale(1);
+	}
+ }
+
+ @keyframes sparks-heart {
+	0% {
+	  opacity: 0;
+	}
+
+	100% {
+	  opacity: 100%;
+	}
+
+	0% {
+	  opacity: 0;
+	}
+ }
+
+ @keyframes color-change {
+	0% {
+	  transform: scale(0);
+	}
+
+	100% {
+	  transform: scale(1);
+	}
+ }
