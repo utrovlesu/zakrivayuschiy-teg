@@ -10,7 +10,7 @@
 
 */
 .card__icon-button:focus-visible {
-	border: 2px solid var(--color-accent);
+	border: 2px solid var(--color-accent, #000);
 	transition: border 0.3s ease;
  }
 
@@ -24,46 +24,46 @@
  }
 
  .card__icon-button:hover .core {
-	fill: var(--color-contour);
+	fill: var(--color-contour, #000);
 	transition: fill 0.3s ease;
  }
 
  .card__icon-button:hover .main-body {
-	fill: var(--color-contour);
+	fill: var(--color-contour, #000);
 	transition: fill 0.3s ease;
 	transition-delay: 0.05s;
  }
 
  .card__icon-button:active .core {
-	fill: var(--color-sparks);
+	fill: var(--color-sparks, #f00);
 	transition: fill 0.3s ease;
  }
 
  .card__icon-button:active .main-body {
-	fill: var(--color-sparks);
+	fill: var(--color-sparks, #f00);
 	transition: fill 0.3s ease;
 	transition-delay: 0.05s;
  }
 
  .like-icon.is-liked .core {
-	fill: var(--color-sparks);
+	fill: var(--color-sparks, #f00);
 	transition: fill 0.3s ease;
  }
 
  .like-icon.is-liked .main-body {
-	fill: var(--color-sparks);
+	fill: var(--color-sparks, #f00);
 	transition: fill 0.3s ease;
 	transition-delay: 0.05s;
  }
 
  .like-icon.is-liked .contour {
-	fill: var(--color-sparks);
+	fill: var(--color-sparks, #f00);
 	transition: fill 0.3s ease;
 	transition-delay: 0.06s;
  }
 
  .contour {
-	fill: var(--color-contour);
+	fill: var(--color-contour, #000);
 	transition: fill 0.1s linear;
  }
 
@@ -79,7 +79,7 @@
  }
 
 .button:focus-visible {
-  box-shadow: 2px 2px 0px 0px var(--color-accent);
+  box-shadow: 2px 2px 0px 0px var(--color-accent, #000);
   transition: box-shadow 0.3s ease;
 }
 
@@ -90,7 +90,7 @@
   left: 0;
   inline-size: 100%;
   block-size: 100%;
-  background-color: var(--color-accent);
+  background-color: var(--color-accent, #000);
   transform: scaleX(0);
   transition: transform 0.5s ease-in-out;
   z-index: 1;

@@ -241,11 +241,9 @@
   inset: 0;
   transition: opacity 1s ease-in-out;
   max-width: 341px;
-  max-height: 191px;
   padding: 30px 37px;
   row-gap: 30px;
   column-gap: 20px;
-  overflow: hidden;
 }
 
 #pop-up::backdrop {
@@ -307,7 +305,8 @@
   }
 
   #pop-up {
-    max-width: 353px;
-    padding: 30px 29px;
+    max-width: 356px;
+    padding: 28px 30px;
+    row-gap: 30px;
   }
 }
